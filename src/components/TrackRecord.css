@@ -1,0 +1,76 @@
+.track-record-section {
+  padding: 100px 0;
+}
+
+.track-record-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.track-record-content .description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.partners-text {
+  font-style: italic;
+  color: var(--text-muted);
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.track-record-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visual-card {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.visual-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.visual-card.accent {
+  background: linear-gradient(135deg, var(--accent) 0%, #818cf8 100%);
+}
+
+.visual-card.accent h3, .visual-card.accent p {
+  color: var(--bg-main);
+}
+
+@media (max-width: 992px) {
+  .track-record-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
